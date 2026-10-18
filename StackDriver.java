@@ -1,5 +1,3 @@
-// Stack Examples discussed in class.
-
 import java.util.Scanner;
 
 public class StackDriver
@@ -189,18 +187,6 @@ public class StackDriver
     }
 
     // Evaluate the expression, but the expression must be fully parenthesized
-    // in other words it will not evaluate 9 + 5, but it will evaluate (9+5)
-    // also it will not evaluate (8 * 4) + 7, but will evaluate ((8 * 4) + 7)
-
-    // go thru the string and
-    // if you see a number push on s1, 
-    // if you see an operator push on s2
-    // if you see a ) 
-    //       pop operand2 and operand1 from stack 1 (in this order)
-    //       then pop the operator from stack 2 and 
-    //       apply the operator to the operands
-    //       push the result back on stack 1
-    // finally at the end print the result and pop it off of stack 1.
     public static void evaluateExpr(String str)
     {
 	int i;
