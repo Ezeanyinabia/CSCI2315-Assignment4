@@ -51,9 +51,9 @@ public class StackDriver
 
                 case 2:
                     if (!hasExpression) {
-                        System.out.println("Error: No expression has been entered.");[cite: 1]
+                        System.out.println("Error: No expression has been entered.");
                     } else if (evaluated) {
-                        System.out.println("Error: This expression has already been evaluated. Please enter a new expression using option 1.");[cite: 1]
+                        System.out.println("Error: This expression has already been evaluated. Please enter a new expression using option 1.");
                     } else {
                         evaluateExpr(currentExpr);
                         evaluated = true;
@@ -62,18 +62,18 @@ public class StackDriver
 
                 case 3:
                     if (!hasExpression) {
-                        System.out.println("Error: No expression has been entered.");[cite: 1]
+                        System.out.println("Error: No expression has been entered.");
                     } else if (converted) {
-                        System.out.println("Error: This expression has already been converted. Please enter a new expression using option 1.");[cite: 1]
+                        System.out.println("Error: This expression has already been converted. Please enter a new expression using option 1.");
                     } else {
                         postfixExpr = convertToPostfix(currentExpr);
-                        System.out.println("The post-fix notation is: " + postfixExpr);[cite: 1]
+                        System.out.println("The post-fix notation is: " + postfixExpr);
                         converted = true;
                     }
                     break;
 
                 case 4:
-                    System.out.print("Would you like to (1) use the post-fix expression from part c, or (2) enter a new post-fix expression? Enter 1 or 2: ");[cite: 1]
+                    System.out.print("Would you like to (1) use the post-fix expression from part c, or (2) enter a new post-fix expression? Enter 1 or 2: ");
                     int subChoice;
                     if (in.hasNextInt()) {
                         subChoice = in.nextInt();
@@ -86,13 +86,13 @@ public class StackDriver
 
                     if (subChoice == 1) {
                         if (!converted || postfixExpr == null) {
-                            System.out.println("Error: No post-fix expression is available from part c.");[cite: 1]
+                            System.out.println("Error: No post-fix expression is available from part c.");
                         } else {
                             System.out.println("Evaluating converted post-fix expression: " + postfixExpr);
                             evaluatePostfix(postfixExpr);
                         }
                     } else if (subChoice == 2) {
-                        System.out.print("Enter a new post-fix expression: ");[cite: 1]
+                        System.out.print("Enter a new post-fix expression: ");
                         String newPostfix = in.nextLine();
                         evaluatePostfix(newPostfix);
                     } else {
