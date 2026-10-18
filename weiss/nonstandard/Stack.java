@@ -1,4 +1,4 @@
-package weiss.util;
+package weiss.nonstandard;
 
 import java.io.Serializable;
 
